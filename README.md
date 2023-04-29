@@ -1,6 +1,6 @@
 # Custom Compliance Policies
 
-Compliance policies in Microsoft Intune have a critical role in adopting Zero Trust. Compliance policies allow an organization to dynamically verify the "device health" of an endpoint prior to accessing internal resources. 
+Compliance policies in Microsoft Intune have a critical role in adopting a [Zero Trust](https://learn.microsoft.com/en-us/security/zero-trust/deploy/endpoints) security strategy for endpoints. Compliance policies allow an organization to dynamically verify the "device health" of an endpoint prior to accessing internal resources. 
 
 This collection of sample custom compliance scripts could be used as-is or customized to extend the capabiliies of the native Windows compliance policies to fit your specific needs. 
 
