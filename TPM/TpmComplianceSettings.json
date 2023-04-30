@@ -1,0 +1,88 @@
+{
+  "Rules": [
+   {
+      "SettingName": "TpmPresent",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://learn.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-overview",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "A TPM is either not present or has malfunctioned on this device.",
+          "Description": "All devices require a TPM chip. Please contact your support desk to resolve this issue."
+        }
+      ]
+    },
+    {
+      "SettingName": "TpmVersion",
+      "Operator": "GreaterEquals",
+      "DataType": "Version",
+      "Operand": "2.0",
+      "MoreInfoUrl": "https://support.microsoft.com/en-us/windows/enable-tpm-2-0-on-your-pc-1fd5a332-360d-4f46-a1e7-ae6b0c90645c",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "TPM version is not 2.0",
+          "Description": "TPM version needs to be upgraded to at least 2.0."
+        }
+      ]
+    },
+    {
+      "SettingName": "TpmReady",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://learn.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-overview",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "The TPM is not in a ready state.",
+          "Description": "The TPM is not in a ready state and does not comply with Windows standards. Please contact your support desk to resolve this issue."
+        }
+      ]
+    },
+    {
+      "SettingName": "TpmEnabled",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://support.microsoft.com/en-us/windows/enable-tpm-2-0-on-your-pc-1fd5a332-360d-4f46-a1e7-ae6b0c90645c#:~:text=Press%20%5B%20Windows%20Key%5D%20%2B%20R%20or%20select,support%20information%20for%20instructions%20to%20enable%20the%20TPM.",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "The TPM is not enabled.",
+          "Description": "The TPM is not in a ready state and does not comply with Windows standards. Please contact your support desk to resolve this issue."
+        }
+      ]
+    },
+    {
+      "SettingName": "TpmActivated",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://learn.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-overview",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "The TPM is not activated.",
+          "Description": "The TPM is not in a ready state and does not comply with Windows standards. Please contact your support desk to resolve this issue."
+        }
+      ]
+    },
+    {
+      "SettingName": "RestartPending",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": false,
+      "MoreInfoUrl": "https://learn.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-overview",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "The device requires a restart.",
+          "Description": "The TPM is not in a ready state and does not comply with Windows standards. Please contact your support desk to resolve this issue."
+        }
+      ]
+    }
+  ]
+}
