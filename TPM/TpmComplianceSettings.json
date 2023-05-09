@@ -9,7 +9,7 @@
       "RemediationStrings": [
         {
           "Language": "en_US",
-          "Title": "A TPM is either not present or has malfunctioned on this device.",
+          "Title": "The trusted platform module (TPM) is either not present or has malfunctioned on this device.",
           "Description": "All devices require a TPM chip. Please contact your support desk to resolve this issue."
         }
       ]
@@ -17,13 +17,13 @@
     {
       "SettingName": "TpmVersion",
       "Operator": "GreaterEquals",
-      "DataType": "Version",
-      "Operand": "2.0",
+      "DataType": "Int64",
+      "Operand": 2,
       "MoreInfoUrl": "https://support.microsoft.com/en-us/windows/enable-tpm-2-0-on-your-pc-1fd5a332-360d-4f46-a1e7-ae6b0c90645c",
       "RemediationStrings": [
         {
           "Language": "en_US",
-          "Title": "TPM version is not 2.0",
+          "Title": "The TPM version on this device is {ActualValue}. A TPM version of 2.0 or higher is required for compliance.",
           "Description": "TPM version needs to be upgraded to at least 2.0."
         }
       ]
@@ -37,7 +37,7 @@
       "RemediationStrings": [
         {
           "Language": "en_US",
-          "Title": "The TPM is not in a ready state.",
+          "Title": "The TPM on this device is not in a ready state.",
           "Description": "The TPM is not in a ready state and does not comply with Windows standards. Please contact your support desk to resolve this issue."
         }
       ]
@@ -51,7 +51,7 @@
       "RemediationStrings": [
         {
           "Language": "en_US",
-          "Title": "The TPM is not enabled.",
+          "Title": "The TPM on this device has not been enabled, which is required for compliance.",
           "Description": "The TPM is not in a ready state and does not comply with Windows standards. Please contact your support desk to resolve this issue."
         }
       ]
@@ -65,7 +65,7 @@
       "RemediationStrings": [
         {
           "Language": "en_US",
-          "Title": "The TPM is not activated.",
+          "Title": "The TPM on this device has not been activated, which is required for compliance.",
           "Description": "The TPM is not in a ready state and does not comply with Windows standards. Please contact your support desk to resolve this issue."
         }
       ]
@@ -79,7 +79,7 @@
       "RemediationStrings": [
         {
           "Language": "en_US",
-          "Title": "The device requires a restart.",
+          "Title": "A restart is pending on this device to complete TPM provisioning.",
           "Description": "The TPM is not in a ready state and does not comply with Windows standards. Please contact your support desk to resolve this issue."
         }
       ]
