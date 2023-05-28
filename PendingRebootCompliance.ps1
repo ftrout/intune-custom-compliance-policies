@@ -15,8 +15,10 @@ foreach ($key in $pendingRebootKeys) {
     }
 }
 
-if ($(Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Updates" -Name "UpdateExeVolatile" -ErrorAction SilentlyContinue).UpdateExeVolatile -ne 0) {
-    $pendingReboot = $true
+if (Test-Path "HKLM:\SOFTWARE\Microsoft\Updates") {
+    if ($(Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Updates" -Name "UpdateExeVolatile" -ErrorAction SilentlyContinue).UpdateExeVolatile -ne 0) {
+        $pendingReboot = $true
+    }
 }
 
 if ($(Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Name "PendingFileRenameOperations" -ErrorAction SilentlyContinue)) {
