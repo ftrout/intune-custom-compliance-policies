@@ -1,60 +1,60 @@
 {
-    "Rules": [
+  "Rules": [
+    {
+      "SettingName": "ProtectionStatus",
+      "Operator": "IsEquals",
+      "DataType": "String",
+      "Operand": "On",
+      "MoreInfoURL": "https://bing.com",
+      "RemediationStrings": [
         {
-            "SettingName": "ProtectionStatus",
-            "Operator": "IsEquals",
-            "DataType": "String",
-            "Operand": "On",
-            "MoreInfoURL": "https://bing.com",
-            "RemediationStrings": [
-                {
-                    "Language": "en_US",
-                    "Title": "BitLocker protection is not enabled.",
-                    "Description": "BitLocker protection status is turned off. Please contact your support desk to resolve this issue."
-                }
-            ]
-        },
-        {
-            "SettingName": "EncryptionMethod",
-            "Operator": "IsEquals",
-            "DataType": "String",
-            "Operand": "XtsAes256",
-            "MoreInfoURL": "https://bing.com",
-            "RemediationStrings": [
-                {
-                    "Language": "en_US",
-                    "Title": "The BitLocker encryption method is non-compliant.",
-                    "Description": "BitLocker encryption method should be XtsAes256. Please contact your support desk to resolve this issue."
-                }
-            ]
-        },
-        {
-            "SettingName": "EncryptionPercentage",
-            "Operator": "IsEquals",
-            "DataType": "String",
-            "Operand": "100",
-            "MoreInfoURL": "https://bing.com",
-            "RemediationStrings": [
-                {
-                    "Language": "en_US",
-                    "Title": "BitLocker encryption is not complete",
-                    "Description": "The BitLocker encryption is currently at {ActualValue}%. If this is a new computer please wait for encryption to complete - if not, contact your support desk to resolve this issue."
-                }
-            ]
-        },
-        {
-            "SettingName": "VolumeStatus",
-            "Operator": "IsEquals",
-            "DataType": "String",
-            "Operand": "FullyEncrypted",
-            "MoreInfoURL": "https://bing.com",
-            "RemediationStrings": [
-                {
-                    "Language": "en_US",
-                    "Title": "The drive is not fully encrypted by BitLocker.",
-                    "Description": "The drive should be fully encrypted with BitLocker. If this is a new computer please wait for encryption to complete - if not, contact your support desk to resolve this issue."
-                }
-            ]
+          "Language": "en_US",
+          "Title": "BitLocker protection is not enabled.",
+          "Description": "BitLocker protection status is {ActualValue}. Please contact your support desk to resolve this issue."
         }
-    ]
+      ]
+    },
+    {
+      "SettingName": "EncryptionMethod",
+      "Operator": "IsEquals",
+      "DataType": "String",
+      "Operand": "XtsAes256",
+      "MoreInfoURL": "https://bing.com",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "The encryption method used with BitLocker does not meet corporate compliance.",
+          "Description": "BitLocker encryption method is currently set to {ActualValue}, but should be XtsAes256. Please contact your support desk to resolve this issue."
+        }
+      ]
+    },
+    {
+      "SettingName": "EncryptionPercentage",
+      "Operator": "IsEquals",
+      "DataType": "String",
+      "Operand": "100",
+      "MoreInfoURL": "https://bing.com",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "BitLocker encryption is not complete",
+          "Description": "The BitLocker encryption is currently at {ActualValue}%. If this is a new computer please wait for encryption to complete - if not, contact your support desk to resolve this issue."
+        }
+      ]
+    },
+    {
+      "SettingName": "VolumeStatus",
+      "Operator": "IsEquals",
+      "DataType": "String",
+      "Operand": "FullyEncrypted",
+      "MoreInfoURL": "https://bing.com",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "The drive is not fully encrypted by BitLocker.",
+          "Description": "The drive should be fully encrypted with BitLocker. If this is a new computer please wait for encryption to complete - if not, contact your support desk to resolve this issue."
+        }
+      ]
+    }
+  ]
 }
