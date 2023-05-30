@@ -6,5 +6,7 @@ This collection of sample custom compliance scripts could be used as-is or custo
 
 See [Use custom compliance policies and settings for Linux and Windows devices with Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/protect/compliance-use-custom-settings) for more information on using custom compliance policies in Microsoft Intune.
 
+---
+
 #### Disclaimer
 Understand the impact of each sample script prior to running it. The scripts should be run in a non-production environment prior to deloyment in production. 
