@@ -2,7 +2,7 @@
   "Rules": [
     {
       "SettingName": "PendingUpdateDays",
-      "Operator": "GreaterThan",
+      "Operator": "LessEquals",
       "DataType": "Int64",
       "Operand": "14",
       "MoreInfoUrl": "https://bing.com",
